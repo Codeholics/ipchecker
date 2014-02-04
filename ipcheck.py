@@ -29,10 +29,10 @@ SENDER = ''
 try:
 	ipfile = open(FILE, 'r+')
 except:
-	print "file not found"
+	#print "file not found"
 	exit(1)
 currentip = ipfile.readline()
-print (currentip)
+#print (currentip)
 #
 #use a subprocess to query your
 #current IP and place it into
@@ -63,7 +63,7 @@ if currentip != out:
 	#Send file with SCP
 	#
 	#os.system(SCPCOM)
-else:
+#else:
 	#print ("Your ip has not changed")
 #
 #Close file
